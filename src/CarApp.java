@@ -15,7 +15,7 @@ public class CarApp {
 
         ArrayList<Car> carList = new ArrayList<>(numofCars);
 
-        for (int i = 0; i <= numofCars ; i++) {
+        for (int i = 0; i < numofCars ; i++) {
             Car car = new Car();
             System.out.println("Enter Make: ");
             String make = scnr.nextLine();
@@ -34,10 +34,9 @@ public class CarApp {
             carList.add(i, car);
         }
 
-//        for (int i = 0; i < carList.size() ; i++) {
-            System.out.println(carList.toString());
-//
-//        }
+        for (Car newCars : carList) {
+            System.out.println(newCars);
+        }
 
 
 
